@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AirdropMe - Admin</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <section class="hero is-small is-info">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-8-desktop is-offset-2-desktop">
+              <h1 class="title is-2 is-spaced">
+                AirdropMe
+              </h1>
+              <h2 class="subtitle is-4">
+                  Send Airdrop at any <strong>protocol.</strong>
+              </h2>
+              <p> ( Ethereum, Stellar, EOS, WAVES )</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <div class="content">
+              <h3>Active Airdrops</h3>
+
+              <h6>Ethereum</h6>
+
+              <div class="box" id="ethereum_box">
+
+              </div>
+
+              <h6>Stellar</h6>
+
+              <div class="box" id="stellar_box">
+                <table class="table is-fullwidth" id="stellar_table">
+                  <thead>
+                      <tr>
+                        <th>Id</th>
+                        <th>Address</th>
+                        <th>Amount</th>
+                        <th>Action</th>
+                
+                      </tr>
+                  </thead>
+                </table>
+              </div>
+
+              <h6>EOS</h6>
+
+              <div class="box" id="eos_box">
+                <table class="table is-fullwidth" id="eos_table">
+                  <thead>
+                      <tr>
+                        <th>Id</th>
+                        <th>Address</th>
+                        <th>Amount</th>
+                        <th>Action</th>
+                
+                      </tr>
+                  </thead>
+                </table>
+              </div>
+
+              <h6>Waves</h6>
+
+              <div class="box" id="waves_box">
+                <table class="table is-fullwidth" id="waves_table">
+                  <thead>
+                      <tr>
+                        <th>Id</th>
+                        <th>Address</th>
+                        <th>Amount</th>
+                        <th>Action</th>
+                
+                      </tr>
+                  </thead>
+                </table>
+              </div>
+            </div>
+
+
+            <br>
+            <br>
+            <div class="content">
+              <p>
+                Start sharing love with <strong>airdrop</strong>!
+              </p>
+            </div>
+            <p class="control">
+              <a class="button is-medium is-info" onclick="loadTransactions('aibe')">
+                <strong class="has-text-weight-semibold">Create Airdrop</strong>
+              </a>
+            </p>
+
+  
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <footer class="footer has-text-centered">
+      <div class="container">
+         <div class="columns">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <p>
+              <strong class="has-text-weight-semibold">
+                <a href="https://www.npmjs.com/package/bulma-start">bulma-start@0.0.3</a>
+              </strong>
+            </p>
+            <p>
+              <small>
+                Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+              </small>
+            </p>
+            <p style="margin-top: 1rem;">
+              <a href="http://bulma.io">
+                <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+    <script type="text/javascript" src="lib/main.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
