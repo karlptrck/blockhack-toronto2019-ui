@@ -46,7 +46,7 @@ async function loadTransactions(protocol){
     }) 
 }
 
-async function approve(address, protocol){
+async function approve(address, amount, protocol){
 
     fetch(`${baseUrl}/airdrop`, {
         method: "post",
@@ -57,7 +57,8 @@ async function approve(address, protocol){
       
         //make sure to serialize your JSON body
         body: JSON.stringify({
-          address: address,
+          address : address,
+          amount : amount,
           protocol : protocol
         })
       })
@@ -155,7 +156,7 @@ const createTable = (transactions, protocol) => {
             tdAction.appendChild(btnReject)
            
             btnApprove.onclick = function(){
-                approve(element.address, protocol)
+                approve(element.address, element.amount, protocol)
                 return false
             }
             
